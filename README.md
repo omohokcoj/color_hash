@@ -1,11 +1,8 @@
 # ColorHash
 
-**TODO: Add description**
+Elixir implementation of https://github.com/zenozeng/color-hash
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `color_hash` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +12,6 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/color_hash](https://hexdocs.pm/color_hash).
+## TODO
 
+* [ ] add `lightness`, `hue`, `saturation` options

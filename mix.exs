@@ -26,15 +26,14 @@ defmodule ColorHash.MixProject do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.0.0", only: :dev},
-      {:credo, ">= 0.0.0", only: :dev}
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
   defp package do
     [
       name: :color_hash,
-      files: ["lib", "mix.exs", "README*", "config"],
+      files: ["lib", "mix.exs", "README*"],
       licenses: ["MIT"],
       links: %{}
     ]
