@@ -2,7 +2,7 @@ defmodule ColorHash.MixProject do
   use Mix.Project
 
   @name "ColorHash"
-  @version "0.1.1"
+  @version "0.2.0"
 
   def project do
     [
@@ -26,7 +26,8 @@ defmodule ColorHash.MixProject do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:dialyxir, "~> 1.0.0-rc.6", only: [:dev, :test], runtime: false}
     ]
   end
 

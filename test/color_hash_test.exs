@@ -15,14 +15,23 @@ defmodule ColorHashTest do
   end
 
   test "lightness" do
-    assert ColorHash.hex("test", lightness: 0.1) == "#26140d"
+    assert ColorHash.hex("test", lightness: 10) == "#26140d"
   end
 
   test "saturation" do
-    assert ColorHash.hex("test", saturation: 0.1) == "#8c7a73"
+    assert ColorHash.hex("test", saturation: 10) == "#8c7a73"
   end
 
   test "lightness and saturation" do
-    assert ColorHash.hex("test", saturation: 0.1, lightness: 0.1) == "#1c1817"
+    assert ColorHash.hex("test", saturation: 10, lightness: 10) == "#1c1817"
+  end
+
+  test "range params" do
+    assert ColorHash.hex("test", saturation: 10..10) == "#8c7a73"
+    assert ColorHash.hex("test", saturation: 1..100) == "#c96236"
+  end
+
+  test "list params" do
+    assert ColorHash.hex("test", saturation: [10]) == "#8c7a73"
   end
 end
